@@ -41,7 +41,7 @@
 
         </div>
 
-        <div class="grid grid-cols-3 gap-4 mt-8">
+        <div class="grid grid-cols-2 gap-4 mt-8">
 
         <a href="{{ route('transfer') }}"
             class="bg-white rounded-xl shadow p-4 hover:bg-gray-100 text-center block">
@@ -52,13 +52,13 @@
 
         </a>
     
-
+        {{--
         <button class="bg-white rounded-xl shadow p-4 hover:bg-gray-100">
             💰
             <br>
             Top Up
         </button>
-        
+        --}}
         <a href="{{ route('transactions') }}"
         class="bg-white rounded-xl shadow p-4 hover:bg-gray-100 text-center block">
 
@@ -69,7 +69,7 @@
         </a>
 
     </div>
-
+    {{--
     <div class="bg-white rounded-xl shadow mt-8 p-6">
 
         <h3 class="font-bold text-lg mb-3">
@@ -81,7 +81,7 @@
         </p>
 
     </div>
-
+    --}}
 </div>
 </div>
             </div>
