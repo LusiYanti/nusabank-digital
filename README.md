@@ -49,7 +49,7 @@ NusaBank Digital is a Laravel-based digital banking system that simulates basic 
 
 
 \### Customer Dashboard
-!\[Customer Dashboard](assets/dashboard.png)
+<img src="./assets/dashboard.png" width="800">
 
 
 
