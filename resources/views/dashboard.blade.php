@@ -58,12 +58,15 @@
             <br>
             Top Up
         </button>
+        
+        <a href="{{ route('transactions') }}"
+        class="bg-white rounded-xl shadow p-4 hover:bg-gray-100 text-center block">
 
-        <button class="bg-white rounded-xl shadow p-4 hover:bg-gray-100">
-            📄
-            <br>
+        📄 <br>
+
             Riwayat
-        </button>
+
+        </a>
 
     </div>
 

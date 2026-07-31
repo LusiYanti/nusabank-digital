@@ -4,6 +4,7 @@ use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\DashboardController;
 use App\Http\Controllers\TransferController;
+use App\Http\Controllers\TransactionController;
 
 Route::get('/', function () {
     return view('welcome');
@@ -20,7 +21,11 @@ Route::get('/transfer', [TransferController::class, 'index'])
 Route::post('/transfer', [TransferController::class, 'store'])
     ->middleware(['auth'])
     ->name('transfer.store');
-    
+
+Route::get('/transactions', [TransactionController::class, 'index'])
+    ->middleware(['auth'])
+    ->name('transactions');
+
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
     Route::patch('/profile', [ProfileController::class, 'update'])->name('profile.update');
