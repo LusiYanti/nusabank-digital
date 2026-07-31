@@ -54,17 +54,15 @@ NusaBank Digital is a Laravel-based digital banking system that simulates basic 
 
 
 \### Transfer Feature
-!\[Transfer Feature](assets/transfer.png)
-
-
-
+<img src="./assets/transfer.png" width="800">
 
 
 \### Transaction History
-!\[Transaction History](assets/history.png)
+<img src="./assets/history.png" width="800">
 
 
 
 \### Admin Dashboard
-!\[Admin Dashboard](assets/admin-dashboard.png)
+<img src="./assets/admin-dashboard.png" width="800">
+
 
