@@ -42,10 +42,14 @@ class RegisteredUserController extends Controller
             'password' => Hash::make($request->password),
         ]);
         
+        if ($user->role == 'user') {
+
         $user->account()->create([
         'account_number' => rand(1000000000, 9999999999),
         'balance' => 10000000,
         ]);
+
+        }
         event(new Registered($user));
 
         Auth::login($user);
